@@ -1,0 +1,272 @@
+{
+  "status": "PHASE_A_BLIND_PREDICTIONS_FROZEN_BEFORE_REFERENCE_ATTACH",
+  "target_sha256": "15b5857aed7e507149e7035381cdc5f44238c2768428fa65411dacbf12891dde",
+  "model_lock_sha256": "3925a7c45c0604f42ad125cbdb76ec6106d5d3f44aa967800469e3b0e5b335aa",
+  "protocol_sha256": "ab4cc1c44cce008ba708f68b47c98ec22d7117ecabb1c66131a22c6c1d36e39f",
+  "common_projection_sha256": "28cbf453bf9a8cb39a8d5914a15f57d81b0a2c4c1b9aad6fcc200c49a168c975",
+  "candidate_count": 13,
+  "projected_count": 13,
+  "reference_present": false,
+  "runs": [
+    {
+      "run": "pi_gnn_seed20260929",
+      "projected_sha256": "4d6b119af42d410540516ac48aae99fc9ac4535f00f7d7b10582ae4cc783e18e",
+      "candidate_sha256": "6c1cc8ef2c06c7f872e62336203876489656f85ec92a6f333f85bba427213199",
+      "fine_month_t_per_mwh": [
+        0.9015003926320195,
+        0.9355520796828961,
+        0.44942852490850116
+      ],
+      "audit": {
+        "objective": 27.600770083412527,
+        "max_load_month_err_mwh": 0.2000000000698492,
+        "max_gen_month_err_mwh": 0.20000000001164153,
+        "max_directed_flow_err_mwh": 0.20000000015716068,
+        "max_line_ratio": 1.0000000000000007,
+        "representative_hours": 168,
+        "expanded_hours": 696,
+        "monthly_band_mwh": 0.2
+      }
+    },
+    {
+      "run": "pi_gnn_seed20260930",
+      "projected_sha256": "5f576b11552abc3407193b4281b6b7a77037c4f7405bb5ce0c16c06d37da59e2",
+      "candidate_sha256": "096261d6f19e8a42dba45e9d536a45ff78e514580306b94a02d9ee121ea53f8b",
+      "fine_month_t_per_mwh": [
+        0.9020543613880011,
+        0.9350063688030171,
+        0.44942855813368604
+      ],
+      "audit": {
+        "objective": 27.4658247359044,
+        "max_load_month_err_mwh": 0.2000000000698492,
+        "max_gen_month_err_mwh": 0.20000000001164153,
+        "max_directed_flow_err_mwh": 0.2,
+        "max_line_ratio": 1.0000000000000009,
+        "representative_hours": 168,
+        "expanded_hours": 696,
+        "monthly_band_mwh": 0.2
+      }
+    },
+    {
+      "run": "pi_gnn_seed20260931",
+      "projected_sha256": "3dc112b21c7bfb882ff68e20d7db015298531c3dac8831a34edbb9e8e890ca99",
+      "candidate_sha256": "0d72b9cfe048ca4015d4505810cb038183616c8f0a9173b461af884acf70bb5d",
+      "fine_month_t_per_mwh": [
+        0.9018383772520376,
+        0.9352191465904894,
+        0.449428797486169
+      ],
+      "audit": {
+        "objective": 33.33036573711883,
+        "max_load_month_err_mwh": 0.2000000000698492,
+        "max_gen_month_err_mwh": 0.20000000001164153,
+        "max_directed_flow_err_mwh": 0.2000000003608875,
+        "max_line_ratio": 1.0000000000000007,
+        "representative_hours": 168,
+        "expanded_hours": 696,
+        "monthly_band_mwh": 0.2
+      }
+    },
+    {
+      "run": "pi_gnn_seed20260932",
+      "projected_sha256": "d5d2fc48564f7503a8d79f322b0d89f9c4a2cab41403504cb5b23dd1dc32a08a",
+      "candidate_sha256": "1ef927265c8b568a472dcd0c3af5884118ac8d8670680e2e972a5beedb0c5259",
+      "fine_month_t_per_mwh": [
+        0.9018599045693766,
+        0.9351971632470844,
+        0.4494288629403668
+      ],
+      "audit": {
+        "objective": 24.989970138115158,
+        "max_load_month_err_mwh": 0.19999999995343387,
+        "max_gen_month_err_mwh": 0.20000000001164153,
+        "max_directed_flow_err_mwh": 0.20000000018626451,
+        "max_line_ratio": 1.0000000000000004,
+        "representative_hours": 168,
+        "expanded_hours": 696,
+        "monthly_band_mwh": 0.2
+      }
+    },
+    {
+      "run": "pi_gnn_seed20260933",
+      "projected_sha256": "9895453d019ef1a2dcab1588f22c336fafc9b2e3de9ff46ebccc9c9426848489",
+      "candidate_sha256": "d35cd232e907ad9bfe6b884100eecfac6f161731a96b0341fa710a700bca3a35",
+      "fine_month_t_per_mwh": [
+        0.9014740895840428,
+        0.9355776989835476,
+        0.44942862405929734
+      ],
+      "audit": {
+        "objective": 28.45815402608163,
+        "max_load_month_err_mwh": 0.19999999995343387,
+        "max_gen_month_err_mwh": 0.20000000001164153,
+        "max_directed_flow_err_mwh": 0.2000000000698492,
+        "max_line_ratio": 1.0000000000000004,
+        "representative_hours": 168,
+        "expanded_hours": 696,
+        "monthly_band_mwh": 0.2
+      }
+    },
+    {
+      "run": "pi_gnn_seed20260934",
+      "projected_sha256": "4bbd705483595c69d49dc9b989577f071cbcbaa133504a01678ddd8867ac209a",
+      "candidate_sha256": "ef5a763021e15e5857652eefc79a96c8a72b1a9911d642475db084dbea677aca",
+      "fine_month_t_per_mwh": [
+        0.9007491073675784,
+        0.9362927144910732,
+        0.4494285589724659
+      ],
+      "audit": {
+        "objective": 34.411297100270204,
+        "max_load_month_err_mwh": 0.19999999983701855,
+        "max_gen_month_err_mwh": 0.20000000001164153,
+        "max_directed_flow_err_mwh": 0.20000000018626451,
+        "max_line_ratio": 1.0000000000000007,
+        "representative_hours": 168,
+        "expanded_hours": 696,
+        "monthly_band_mwh": 0.2
+      }
+    },
+    {
+      "run": "pi_gnn_seed20260935",
+      "projected_sha256": "683362f39208bc20a84cc945655b1fd5537f1b6fe9bcfaad3121bc293020c3c5",
+      "candidate_sha256": "f830a5f60b7379d152f390857b8b4bae9370b3b2558744bdac9a80ea33397149",
+      "fine_month_t_per_mwh": [
+        0.9010367897633181,
+        0.9360089665176077,
+        0.4494284944410325
+      ],
+      "audit": {
+        "objective": 36.147309864925504,
+        "max_load_month_err_mwh": 0.19999999995343387,
+        "max_gen_month_err_mwh": 0.20000000001164153,
+        "max_directed_flow_err_mwh": 0.20000000004074536,
+        "max_line_ratio": 1.0000000000000007,
+        "representative_hours": 168,
+        "expanded_hours": 696,
+        "monthly_band_mwh": 0.2
+      }
+    },
+    {
+      "run": "pi_gnn_seed20260936",
+      "projected_sha256": "21b876142e30bb9a44c70c53bf2e2ce99183714677d38e337eec18a01c73a76f",
+      "candidate_sha256": "6517ac03c99050057c65fffd520303c0497a33a6fbf445d9760e1f87988e4696",
+      "fine_month_t_per_mwh": [
+        0.901330637702939,
+        0.9357193269944917,
+        0.4494285338281178
+      ],
+      "audit": {
+        "objective": 32.161778012001214,
+        "max_load_month_err_mwh": 0.19999999995343387,
+        "max_gen_month_err_mwh": 0.20000000001164153,
+        "max_directed_flow_err_mwh": 0.20000000001346052,
+        "max_line_ratio": 1.0000000000000007,
+        "representative_hours": 168,
+        "expanded_hours": 696,
+        "monthly_band_mwh": 0.2
+      }
+    },
+    {
+      "run": "pi_gnn_seed20260937",
+      "projected_sha256": "1a128cfa366863be4b0ef6027285d72e1b54b1ed5fded8b229a15cbc38f044fd",
+      "candidate_sha256": "ee988293acf639957962dc4ef826051af2de1fbcef03de3e0fda77fd88738531",
+      "fine_month_t_per_mwh": [
+        0.9013486749673588,
+        0.9357012959714862,
+        0.449428624782114
+      ],
+      "audit": {
+        "objective": 29.02590339117884,
+        "max_load_month_err_mwh": 0.19999999995343387,
+        "max_gen_month_err_mwh": 0.20000000001164153,
+        "max_directed_flow_err_mwh": 0.20000000021536835,
+        "max_line_ratio": 1.0000000000000007,
+        "representative_hours": 168,
+        "expanded_hours": 696,
+        "monthly_band_mwh": 0.2
+      }
+    },
+    {
+      "run": "pi_gnn_seed20260938",
+      "projected_sha256": "0dd4dcb5057bf36637178ebbc58327e57e13f207ac3c42f2577f3baa6fa77ec6",
+      "candidate_sha256": "3cf98df0d063e32a27b1ce2994fb98ce5bb6e684ff6329c6eeb31b2b3f28f5b6",
+      "fine_month_t_per_mwh": [
+        0.9018379781920357,
+        0.9352193080279289,
+        0.4494285563117664
+      ],
+      "audit": {
+        "objective": 29.32148360400569,
+        "max_load_month_err_mwh": 0.20000000030267984,
+        "max_gen_month_err_mwh": 0.20000000001164153,
+        "max_directed_flow_err_mwh": 0.2000000000007276,
+        "max_line_ratio": 1.0000000000000007,
+        "representative_hours": 168,
+        "expanded_hours": 696,
+        "monthly_band_mwh": 0.2
+      }
+    },
+    {
+      "run": "pm_dse_seed20260929",
+      "projected_sha256": "6119bd2bebfcd7ad197779663a38538fca7f8a85f2413c753b840d6ddcc7e75a",
+      "candidate_sha256": "ef45a9690ffdb7f447c7f80009fe6679b2c8aaae147014e3ada0d9c14c879148",
+      "fine_month_t_per_mwh": [
+        0.9018574760739794,
+        0.9351991478210911,
+        0.4494288224649577
+      ],
+      "audit": {
+        "objective": 13.396270049453719,
+        "max_load_month_err_mwh": 0.20000000018626451,
+        "max_gen_month_err_mwh": 0.20000000001164153,
+        "max_directed_flow_err_mwh": 0.20000000001073204,
+        "max_line_ratio": 1.0000000000000007,
+        "representative_hours": 168,
+        "expanded_hours": 696,
+        "monthly_band_mwh": 0.2
+      }
+    },
+    {
+      "run": "pm_star_seed20260929",
+      "projected_sha256": "7cccf39fe50e480f890562a098bd79cf893a5ac7788878979b92222ca265b055",
+      "candidate_sha256": "f525e793a8eb80248f32d3595b12036d85992453c8fb78c8f19271259a623da1",
+      "fine_month_t_per_mwh": [
+        0.9007786380797613,
+        0.9359955044946284,
+        0.44963495104476203
+      ],
+      "audit": {
+        "objective": 28.215772981118302,
+        "max_load_month_err_mwh": 0.2000000000698492,
+        "max_gen_month_err_mwh": 0.20000000001164153,
+        "max_directed_flow_err_mwh": 0.2000000000698492,
+        "max_line_ratio": 1.0000000000000009,
+        "representative_hours": 168,
+        "expanded_hours": 696,
+        "monthly_band_mwh": 0.2
+      }
+    },
+    {
+      "run": "sf_star_seed20260929",
+      "projected_sha256": "eeb2c5d15a141a63e3b18d60765111d2d6a2faf6fa5eef117addff2a6c99c81c",
+      "candidate_sha256": "95868eb38806c33024fba61a118d36dcb3db477383ae8fcdb84b0494fb6dc166",
+      "fine_month_t_per_mwh": [
+        0.900995433087117,
+        0.9359831305790487,
+        0.4494791575489455
+      ],
+      "audit": {
+        "objective": 20.91919265660492,
+        "max_load_month_err_mwh": 0.20000000030267984,
+        "max_gen_month_err_mwh": 0.20000000001164153,
+        "max_directed_flow_err_mwh": 0.20000000030267984,
+        "max_line_ratio": 1.0000000000000009,
+        "representative_hours": 168,
+        "expanded_hours": 696,
+        "monthly_band_mwh": 0.2
+      }
+    }
+  ]
+}

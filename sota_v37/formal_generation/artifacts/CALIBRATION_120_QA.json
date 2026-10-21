@@ -1,0 +1,127 @@
+{
+  "status": "PASS",
+  "calibration_sha256": "6c2ccfc21aa79d0bcb07ab265a5bc948696e3d24f2f723901cbbf4ab6e619f40",
+  "scenario_manifest_sha256": "ef33102327e07790815da9a47f8495f4a91adde6405ebd1ec8dde3a21a4ca9dc",
+  "base_history_sha256": "79c8c061da1eef5425983a0cfc607dcdeb3f09edd19b6407934adc2ee0cfecf6",
+  "keys": [
+    "x_month",
+    "x_history",
+    "graph",
+    "y"
+  ],
+  "shapes": {
+    "x_month": [
+      120,
+      34
+    ],
+    "x_history": [
+      120,
+      168,
+      3,
+      5
+    ],
+    "graph": [
+      3,
+      3
+    ],
+    "y": [
+      120,
+      3
+    ]
+  },
+  "all_finite": true,
+  "unique_x_month_rows": 120,
+  "unique_y_rows": 120,
+  "max_load_weighted_residual_closure_div_1000": 3.725290298461914e-08,
+  "y_min": [
+    0.8478679060935974,
+    0.9092545509338379,
+    0.42573070526123047
+  ],
+  "y_max": [
+    0.9104465246200562,
+    0.9501346945762634,
+    0.46147117018699646
+  ],
+  "y_std": [
+    0.016006074845790863,
+    0.007452308665961027,
+    0.010287816636264324
+  ],
+  "direct_m_min": [
+    0.6583492159843445,
+    0.8854650855064392,
+    0.5916287899017334
+  ],
+  "direct_m_max": [
+    0.6957379579544067,
+    0.9171880483627319,
+    0.6479907631874084
+  ],
+  "residual_min": [
+    0.16427820920944214,
+    0.017340540885925293,
+    -0.1979159712791443
+  ],
+  "residual_max": [
+    0.22842717170715332,
+    0.05572009086608887,
+    -0.15430140495300293
+  ],
+  "x_month_variable_features": 17,
+  "x_month_structurally_constant_features": 17,
+  "history_channel_std": [
+    0.08754991739988327,
+    0.15204750001430511,
+    0.0,
+    0.5227149128913879,
+    0.42961984872817993
+  ],
+  "train_y_std": [
+    0.015866702422499657,
+    0.007602952420711517,
+    0.01028463989496231
+  ],
+  "validation_y_std": [
+    0.016551798209547997,
+    0.006685025058686733,
+    0.010295013897120953
+  ],
+  "spot_reproduction_exact": {
+    "0": {
+      "x_month_max_abs_diff": 0.0,
+      "x_history_max_abs_diff": 0.0,
+      "y_max_abs_diff": 0.0,
+      "graph_max_abs_diff": 0.0
+    },
+    "23": {
+      "x_month_max_abs_diff": 0.0,
+      "x_history_max_abs_diff": 0.0,
+      "y_max_abs_diff": 0.0,
+      "graph_max_abs_diff": 0.0
+    },
+    "57": {
+      "x_month_max_abs_diff": 0.0,
+      "x_history_max_abs_diff": 0.0,
+      "y_max_abs_diff": 0.0,
+      "graph_max_abs_diff": 0.0
+    },
+    "91": {
+      "x_month_max_abs_diff": 0.0,
+      "x_history_max_abs_diff": 0.0,
+      "y_max_abs_diff": 0.0,
+      "graph_max_abs_diff": 0.0
+    },
+    "119": {
+      "x_month_max_abs_diff": 0.0,
+      "x_history_max_abs_diff": 0.0,
+      "y_max_abs_diff": 0.0,
+      "graph_max_abs_diff": 0.0
+    }
+  },
+  "notes": [
+    "17 of 34 monthly features are constant across the frozen load-perturbation calibration set because the merit-order DC dispatch leaves several generator categories structurally fixed; this is retained rather than deleting features after protocol freeze.",
+    "All 120 x_month and y rows are unique, and both frozen train/validation partitions retain nonzero y variation in every Area.",
+    "No formal target-period SOTA metric was used in this audit."
+  ]
+}

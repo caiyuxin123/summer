@@ -1,0 +1,6 @@
+{
+  "max_load_month_err_mwh": 0.20000000030267984,
+  "max_gen_month_err_mwh": 0.20000000001164153,
+  "max_directed_flow_err_mwh": 0.2000000003608875,
+  "max_line_ratio": 1.0000000000000009
+}

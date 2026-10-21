@@ -1,0 +1,144 @@
+{
+  "selected": {
+    "candidate_index": 1,
+    "params": {
+      "pca_components": 8,
+      "ridge_alpha": 0.1
+    },
+    "metrics": {
+      "MAE": 0.04202822229031421,
+      "RMSE": 0.13253867058004876,
+      "MaxAE": 1.0
+    },
+    "complexity": 67904,
+    "runtime_s": 0.13489675521850586
+  },
+  "all_candidates": [
+    {
+      "candidate_index": 0,
+      "params": {
+        "pca_components": 8,
+        "ridge_alpha": 0.01
+      },
+      "metrics": {
+        "MAE": 0.046116809928507634,
+        "RMSE": 0.14654661960335166,
+        "MaxAE": 1.0
+      },
+      "complexity": 67904,
+      "runtime_s": 0.150040864944458
+    },
+    {
+      "candidate_index": 1,
+      "params": {
+        "pca_components": 8,
+        "ridge_alpha": 0.1
+      },
+      "metrics": {
+        "MAE": 0.04202822229031421,
+        "RMSE": 0.13253867058004876,
+        "MaxAE": 1.0
+      },
+      "complexity": 67904,
+      "runtime_s": 0.13489675521850586
+    },
+    {
+      "candidate_index": 2,
+      "params": {
+        "pca_components": 8,
+        "ridge_alpha": 1.0
+      },
+      "metrics": {
+        "MAE": 0.042278013743353916,
+        "RMSE": 0.13073243495475423,
+        "MaxAE": 1.0
+      },
+      "complexity": 67904,
+      "runtime_s": 0.1292102336883545
+    },
+    {
+      "candidate_index": 3,
+      "params": {
+        "pca_components": 16,
+        "ridge_alpha": 0.01
+      },
+      "metrics": {
+        "MAE": 0.0475187071324393,
+        "RMSE": 0.15034096055926016,
+        "MaxAE": 1.0
+      },
+      "complexity": 135808,
+      "runtime_s": 0.12321352958679199
+    },
+    {
+      "candidate_index": 4,
+      "params": {
+        "pca_components": 16,
+        "ridge_alpha": 0.1
+      },
+      "metrics": {
+        "MAE": 0.04244808156488552,
+        "RMSE": 0.13394572644047964,
+        "MaxAE": 1.0
+      },
+      "complexity": 135808,
+      "runtime_s": 0.12925219535827637
+    },
+    {
+      "candidate_index": 5,
+      "params": {
+        "pca_components": 16,
+        "ridge_alpha": 1.0
+      },
+      "metrics": {
+        "MAE": 0.04240846158390895,
+        "RMSE": 0.1312685163698404,
+        "MaxAE": 1.0
+      },
+      "complexity": 135808,
+      "runtime_s": 0.14501428604125977
+    },
+    {
+      "candidate_index": 6,
+      "params": {
+        "pca_components": 24,
+        "ridge_alpha": 0.01
+      },
+      "metrics": {
+        "MAE": 0.0485705327612051,
+        "RMSE": 0.15287532208643304,
+        "MaxAE": 1.0
+      },
+      "complexity": 203712,
+      "runtime_s": 0.14411044120788574
+    },
+    {
+      "candidate_index": 7,
+      "params": {
+        "pca_components": 24,
+        "ridge_alpha": 0.1
+      },
+      "metrics": {
+        "MAE": 0.042901202274031554,
+        "RMSE": 0.13488273688831476,
+        "MaxAE": 1.0
+      },
+      "complexity": 203712,
+      "runtime_s": 0.15261125564575195
+    },
+    {
+      "candidate_index": 8,
+      "params": {
+        "pca_components": 24,
+        "ridge_alpha": 1.0
+      },
+      "metrics": {
+        "MAE": 0.042589148335770974,
+        "RMSE": 0.13170877800658903,
+        "MaxAE": 1.0
+      },
+      "complexity": 203712,
+      "runtime_s": 0.13710665702819824
+    }
+  ]
+}

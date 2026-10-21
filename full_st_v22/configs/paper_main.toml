@@ -1,0 +1,35 @@
+[project]
+name = "paper_main"
+seed = 20260908
+
+[data]
+release = "0.2"
+raw_dir = "data/raw"
+processed_dir = "data/processed"
+base_url = "https://raw.githubusercontent.com/GridMod/RTS-GMLC/0.2/RTS_Data"
+load_file = "timeseries_data_files/Load/DAY_AHEAD_regional_Load.csv"
+wind_file = "timeseries_data_files/WIND/DAY_AHEAD_wind.csv"
+bus_file = "SourceData/bus.csv"
+branch_file = "SourceData/branch.csv"
+gen_file = "SourceData/gen.csv"
+
+[paper]
+main_year = 2020
+main_month = 2
+history_start = "2020-01-01"
+history_end = "2020-01-07"
+use_paper_compat_generator_profile = true
+co2_scope = "operational_direct"
+
+[solver]
+method = "highs"
+feasibility_tol = 1e-8
+
+[output]
+dir = "outputs/paper_main"
+write_hourly = false
+write_plots = true
+
+[verification]
+mae_tolerance = 0.35
+area_value_tolerance = 0.75

@@ -1,0 +1,38 @@
+{
+  "sf_star": {
+    "n": 1,
+    "model_train_plus_predict_s_mean": 0.19897125900024548,
+    "model_train_plus_predict_s_std": 0,
+    "common_projection_s_mean": 5.274182972999824,
+    "common_projection_s_std": 0,
+    "total_s_mean": 5.47315423200007,
+    "parameter_count": 67904
+  },
+  "pm_star": {
+    "n": 1,
+    "model_train_plus_predict_s_mean": 1.7565728930003388,
+    "model_train_plus_predict_s_std": 0,
+    "common_projection_s_mean": 5.677077752000059,
+    "common_projection_s_std": 0,
+    "total_s_mean": 7.433650645000398,
+    "parameter_count": 135808
+  },
+  "pm_dse": {
+    "n": 1,
+    "model_train_plus_predict_s_mean": 0.033447105000050215,
+    "model_train_plus_predict_s_std": 0,
+    "common_projection_s_mean": 4.641289567999593,
+    "common_projection_s_std": 0,
+    "total_s_mean": 4.674736672999643,
+    "parameter_count": 122112
+  },
+  "pi_gnn": {
+    "n": 10,
+    "model_train_plus_predict_s_mean": 12.584316794400047,
+    "model_train_plus_predict_s_std": 0.5861480396907875,
+    "common_projection_s_mean": 5.082139765000011,
+    "common_projection_s_std": 0.1764451947737898,
+    "total_s_mean": 17.666456559400057,
+    "parameter_count": 7505
+  }
+}

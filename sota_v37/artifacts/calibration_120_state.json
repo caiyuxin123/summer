@@ -1,0 +1,13 @@
+{
+  "schema": "v3.6-hidden-state-3-unit-level",
+  "profile_shape": [
+    120,
+    168,
+    48
+  ],
+  "normalization": "Area load / area base load; each of 45 dispatch units / pmax",
+  "profile_min": 0.0,
+  "profile_max": 1.0,
+  "state_npz_sha256": "27b55bfbc7c92785025ae77cc897c38a0257708975cdc64b8996f875c42d9e50",
+  "contains_formal_target": false
+}

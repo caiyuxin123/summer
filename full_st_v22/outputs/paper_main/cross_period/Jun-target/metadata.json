@@ -1,0 +1,16 @@
+{
+  "benchmark": "RTS-GMLC release 0.2",
+  "case": "Jun-target",
+  "hours": 168,
+  "areas": [
+    1,
+    2,
+    3
+  ],
+  "history_start": "2020-01-01",
+  "history_end": "2020-01-07",
+  "target_start": "2020-06-08",
+  "target_end": "2020-06-14",
+  "wind": "disabled",
+  "co2_scope": "operational_direct"
+}

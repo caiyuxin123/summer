@@ -1,0 +1,7 @@
+﻿method,n,MAE_mean,MAE_std,RMSE_mean,RMSE_std,MaxAE_mean,MaxAE_std,reduction_vs_Direct_M_pct,supervised_calibration,formal_status
+Direct-M,1,140.15962680180868,0,161.60383923625312,0,210.9878659248352,0,0.0,No,baseline
+SF* adapted,1,0.7691032946174348,0.0,0.8533545611077545,0.0,1.061200852162214,0.0,99.45126616546649,"Yes, 120 target-external physics-consistent labeled states",formal v3.7
+PM* adapted,1,0.6490317654199348,0.0,0.7049605395599148,0.0,0.844405844806495,0.0,99.53693386588586,"Yes, 120 target-external physics-consistent labeled states",formal v3.7
+PM-DSE adapted,1,1.1695651248566457,0.0,1.3021781075958558,0.0,1.9232438390245354,0.0,99.16554777467377,"Yes, 120 target-external physics-consistent labeled states",formal v3.7
+PI-GNN adapted,10,0.9900931496436561,0.1863948542297101,1.1235943945556228,0.19638303884860706,1.59223358756605,0.36396147686115016,99.29359604314322,"Yes, 120 target-external physics-consistent labeled states",formal v3.7
+Full-ST,1,1.117,0,1.218,0,1.803,0,99.20305153096656,No,existing frozen paper result

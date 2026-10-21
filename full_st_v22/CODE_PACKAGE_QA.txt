@@ -1,0 +1,40 @@
+冀北双链论文尺度残差校正复现工程 v2.2 / 论文 v8
+QA date: 2026-09-09
+
+Environment
+- Python 3.13.5
+- NumPy 2.3.5
+- pandas 2.2.3
+- SciPy 1.17.0
+
+Bundled raw validation: PASS
+- bus=73, branch=120, gen=158
+- load=1368 hourly rows (Jan 1-14 + Feb 1-29 + Jun 1-14, 2020)
+- wind=336 hourly rows (Jan 1-14, 2020)
+- unique timestamps; Period 1..24 complete
+
+pytest:
+.........                                                                [100%]
+9 passed
+
+Current reproducible headline results
+- Feb 696 h Direct-M MAE: 140.1596
+- Feb 696 h Full-ST MAE: 1.1171 (reduction 99.20%)
+- Jan-target Full-ST MAE: 0.4872 (reduction 99.64%)
+- Jun-target Full-ST MAE: 6.2129 (reduction 89.84%)
+- Jan-wind Full-ST MAE: 3.7857
+- AC identity closure: 1.660965e-10
+- AC boundary/loss decomposition closure: 1.660396e-10
+- AC boundary exposure share: 96.5448%
+
+Current-turn reruns
+- cross-period: PASS
+- Jan-wind: PASS
+- lossy AC audit: PASS
+- automatic verify across natural month + wind + cross-period + AC: passed=true
+
+One-command entry point
+python run_reproduce.py
+Pipeline: natural month -> cross-period -> wind-stress -> AC audit -> verify.
+
+Note: the 696 h natural-month full rerun was attempted in the current sandbox but exceeded the sandbox command execution ceiling; its existing current-code output/reference pair passed the complete automatic verification. No numerical value was extrapolated or fabricated.

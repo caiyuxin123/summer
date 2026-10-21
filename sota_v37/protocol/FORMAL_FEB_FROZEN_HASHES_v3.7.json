@@ -1,0 +1,8 @@
+{
+  "status": "FROZEN_FROM_V3.3_BEFORE_V3.7_EVALUATION",
+  "target_input_only_sha256": "15b5857aed7e507149e7035381cdc5f44238c2768428fa65411dacbf12891dde",
+  "reference_only_sha256": "74ace50c9de4fa577f36096e716fb7999f48e4e9b68b78677db762f34bc32cdb",
+  "target_input_keys": ["graph", "x_history", "x_month"],
+  "reference_only_keys": ["y"],
+  "reference_attach_rule": "reference_only.npz must remain absent until blind candidate states and projected monthly predictions are frozen and hashed"
+}

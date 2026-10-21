@@ -1,0 +1,5 @@
+method,MAE,RMSE,MaxAE,improvement_vs_Direct_pct
+Static-S,5.539,6.335,8.567,96.05
+Load-T,3.179,3.880,5.366,97.73
+Gen-T,5.111,5.227,6.652,96.35
+Full-ST,1.117,1.218,1.803,99.20

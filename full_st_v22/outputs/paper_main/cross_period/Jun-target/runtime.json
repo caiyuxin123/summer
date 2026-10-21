@@ -1,0 +1,9 @@
+{
+  "reference_and_history_runtime_s": 2.6417497950001234,
+  "method_runtime_s": {
+    "Static-S": 2.4799013920001016,
+    "Load-T": 2.614050473000134,
+    "Gen-T": 1.720996471000035,
+    "Full-ST": 1.9481452690001788
+  }
+}

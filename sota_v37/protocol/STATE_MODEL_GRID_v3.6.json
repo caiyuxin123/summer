@@ -1,0 +1,12 @@
+{
+  "status": "FROZEN_BEFORE_SELECTION",
+  "train_validation_split": [96, 24],
+  "split_seed": 20260929,
+  "selection_seed": 202609291,
+  "selection_metric": "hidden_state_shape_MAE",
+  "tie_break": ["hidden_state_shape_RMSE", "model_complexity", "candidate_index"],
+  "sf_star": {"pca_components": [8, 16, 24], "ridge_alpha": [0.01, 0.1, 1.0]},
+  "pm_star": {"pca_components": [8, 16, 24], "ridge_alpha": [0.01, 0.1, 1.0]},
+  "pm_dse": {"harmonics": [2, 4, 8], "ridge_alpha": [0.01, 0.1, 1.0]},
+  "pi_gnn": {"hidden": [16, 32], "lr": [0.001, 0.003], "epochs": [120], "weight_decay": [0.0001]}
+}

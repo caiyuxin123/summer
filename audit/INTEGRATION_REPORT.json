@@ -1,0 +1,66 @@
+{
+  "source_archives": {
+    "main_v22_original_zip_sha256": "007bc121ab37fedbac381a5a55ea7909d63025bff7d6a6236f742378285fa8d7",
+    "sota_v37_original_zip_sha256": "83ed239abf67e915cd09ca163e8593555d627817a2405f50b21b9e603e95a429",
+    "sota_formal_sha256": "0570345e1c98400c7a6405f4dc58ae0341cccd754b30e20c157f1161ccdfdd4f",
+    "sota_phaseA_manifest_sha256": "531b4c1ed7cf59380602b62448a8ed1b48db221c50616b256c06cdd708530374",
+    "sota_target_sha256": "15b5857aed7e507149e7035381cdc5f44238c2768428fa65411dacbf12891dde",
+    "sota_reference_sha256": "74ace50c9de4fa577f36096e716fb7999f48e4e9b68b78677db762f34bc32cdb"
+  },
+  "preserved_subprojects": {
+    "primary": "full_st_v22",
+    "comparators": "sota_v37"
+  },
+  "frozen_full_st_MAE": 1.1170817273901814,
+  "frozen_DirectM_MAE": 140.1596331880053,
+  "sota_runs": 13,
+  "common_backend_modules": [
+    "generator_profile.py",
+    "network.py",
+    "carbon.py",
+    "aggregate.py",
+    "dispatch.py"
+  ],
+  "numerical_truth": [
+    "full_st_v22/reference/expected_*.csv",
+    "sota_v37/formal_eval/FORMAL_FEB_SOTA_RESULTS_v3.7.json"
+  ],
+  "what_was_rerun": [
+    "full_st_v22 raw-data validation",
+    "full_st_v22 pytest 9",
+    "sota_v37 pytest 14",
+    "sota_v37 Phase-B reevaluation (hash identical)",
+    "February 696h Full-ST full-from-source rerun in isolated copy",
+    "Jan-target 168h and Jun-target 168h full-from-source rerun",
+    "Jan-wind 168h Full-ST and 3 ablations rerun",
+    "RTS-GMLC 73-bus AC audit rerun"
+  ],
+  "not_yet_rerun": [
+    "120 SOTA calibration scenario regeneration",
+    "13 SOTA baseline model refits"
+  ],
+  "recomputed_primary_results": {
+    "Feb2020_696h": {
+      "Direct-M": 140.1596331880053,
+      "Static-S": 5.539480383547243,
+      "Load-T": 3.1793241684037525,
+      "Gen-T": 5.110548100132424,
+      "Full-ST": 1.1170817273901814
+    },
+    "Jan-target": {
+      "Direct-M": 133.96734604568806,
+      "Full-ST": 0.4871911417025482
+    },
+    "Jun-target": {
+      "Direct-M": 61.150253046257866,
+      "Full-ST": 6.21285301938921
+    },
+    "Jan-wind": {
+      "Full-ST": 3.78570593302652
+    },
+    "AC": {
+      "max_identity_closure": 1.6609646991128102e-10,
+      "boundary_share_pct": 96.5447683925316
+    }
+  }
+}

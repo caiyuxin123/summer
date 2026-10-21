@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "check_count": 51,
+  "failed": [],
+  "checks": [],
+  "notes": "Frozen-result/checkpoint integrity only; not an independent Feb 696h+120 scenarios end-to-end rerun.",
+  "frozen_phase_b_sha256": "0570345e1c98400c7a6405f4dc58ae0341cccd754b30e20c157f1161ccdfdd4f",
+  "phase_b_hash_equal": true,
+  "feb_696h_from_scratch_rerun": "PASS: Static-S 5.539480; Load-T 3.179324; Gen-T 5.110548; Full-ST 1.117082",
+  "cross_period_jan_jun_independent_rerun": "PASS (observed in isolated copied source: 0.487191, 6.212853)",
+  "wind_jan_168h_from_scratch_rerun": "PASS: Full-ST 3.785706",
+  "ac_audit_from_scratch_rerun": "PASS: identity closure 1.660965e-10; boundary exposure 96.544768%"
+}

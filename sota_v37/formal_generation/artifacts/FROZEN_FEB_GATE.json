@@ -1,0 +1,124 @@
+{
+  "gate_version": "2026-09-29-v3.3-v8-frozen-feb",
+  "validated": true,
+  "source_baseline": "paper v8 + reproduction engine v2.2",
+  "fresh_reproduction": {
+    "fine_month": [
+      899.9342502039033,
+      935.7356554958691,
+      450.47778855774783
+    ],
+    "hourly_coarse_month": [
+      689.3144996412555,
+      907.6682512612961,
+      632.3657635099514
+    ],
+    "direct_month": [
+      688.9463394431672,
+      908.088397214504,
+      632.3215190796625
+    ],
+    "delta_spatial": [
+      210.61975056264782,
+      28.06740423457302,
+      -181.8879749522036
+    ],
+    "delta_temporal": [
+      0.36816019808827605,
+      -0.42014595320790704,
+      0.044244430288927106
+    ],
+    "delta_total": [
+      210.9879107607361,
+      27.64725828136511,
+      -181.84373052191467
+    ],
+    "closure": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "area_energy_mwh": [
+      767495.7632469999,
+      778776.7432716,
+      1008906.762105
+    ],
+    "max_flow_ratio": 1.0000000000000002,
+    "max_power_balance_mw": 9.094947017729282e-13,
+    "dimensions": {
+      "buses": 73,
+      "branches": 120,
+      "dispatch_units": 45,
+      "area_type_categories": 22,
+      "hours": 696
+    },
+    "area_base_load_mw": [
+      2850.0,
+      2850.0,
+      2850.0
+    ],
+    "feature_names": [
+      "area1_avg_load_pu",
+      "area2_avg_load_pu",
+      "area3_avg_load_pu",
+      "gen_cf_A1_COAL_155",
+      "gen_cf_A1_COAL_350",
+      "gen_cf_A1_COAL_76",
+      "gen_cf_A1_GAS_CC355",
+      "gen_cf_A1_GAS_CT55",
+      "gen_cf_A1_HYDRO_50",
+      "gen_cf_A1_NUCLEAR_400",
+      "gen_cf_A1_OIL_CT20",
+      "gen_cf_A1_OIL_ST12",
+      "gen_cf_A2_COAL_155",
+      "gen_cf_A2_COAL_350",
+      "gen_cf_A2_COAL_76",
+      "gen_cf_A2_GAS_CC355",
+      "gen_cf_A2_GAS_CT55",
+      "gen_cf_A2_HYDRO_50",
+      "gen_cf_A2_OIL_CT20",
+      "gen_cf_A3_COAL_155",
+      "gen_cf_A3_GAS_CC355",
+      "gen_cf_A3_GAS_CT55",
+      "gen_cf_A3_HYDRO_50",
+      "gen_cf_A3_OIL_CT20",
+      "gen_cf_A3_OIL_ST12",
+      "directed_flow_A1_to_A2_share",
+      "directed_flow_A1_to_A3_share",
+      "directed_flow_A2_to_A1_share",
+      "directed_flow_A2_to_A3_share",
+      "directed_flow_A3_to_A1_share",
+      "directed_flow_A3_to_A2_share",
+      "direct_cef_A1_1000",
+      "direct_cef_A2_1000",
+      "direct_cef_A3_1000"
+    ]
+  },
+  "comparison": {
+    "passed": true,
+    "max_abs_differences": {
+      "fine_month": 3.410605131648481e-13,
+      "hourly_coarse_month": 2.2737367544323206e-13,
+      "direct_month": 0.0,
+      "delta_spatial": 3.410605131648481e-13,
+      "delta_temporal": 2.2729734761028908e-13,
+      "delta_total": 3.410605131648481e-13,
+      "area_energy_mwh": 1.1641532182693481e-10
+    },
+    "closure_max": 0.0,
+    "tolerance": 1e-08
+  },
+  "required_hashes": {
+    "paper_physics/data/bus.csv": "cec3f776222812d43eaeaf7ac85b577719dc565f354a04e120c12a647ddb710e",
+    "paper_physics/data/branch.csv": "e92d16d13b1c5d2899f7871c0c99c3eb94605528beef157bf9e1ccbcffe5ef4e",
+    "paper_physics/data/gen.csv": "23a5203d77920110ae70919feb19bb6c6175208a4d22767e1d30bfa871b00a8f",
+    "paper_physics/data/DAY_AHEAD_regional_Load.csv": "5a76a7ffe673c6531a10e83556d313eb028dff96e4209166909e74bf4e39b254",
+    "paper_physics/network.py": "6a0482308139626a35f258264365e3d0d0ea772edb23a8175917691818426e89",
+    "paper_physics/dispatch.py": "69296d28f44730da6b43f792e95e9e634fa7ab749ec838656a620b1010cb93c1",
+    "paper_physics/carbon.py": "0104d118ec32d493f1a7ec3198df6171f8999592406a6015758b1beadbabe1b2",
+    "paper_physics/aggregate.py": "2b0fc772abcb6fe901350b19c0ffa6c75bda2cad0b085cd9383b05e18367687f",
+    "paper_physics/generator_profile.py": "9282eb9120d2dfc5e0e7e6b5ed87b7e28e58b33d5123901fa8c5220b9f2b1a9c",
+    "paper_physics/features.py": "9581541630cf582b7e010445746354346b8b3b771726415449e099c15429b08b",
+    "formal_generation/paper_physics_backend.py": "68be2cd7678d717f4f3531073ce32876e01d5b1bf0e99e1246cbf04672e0c105"
+  }
+}

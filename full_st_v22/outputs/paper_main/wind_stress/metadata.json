@@ -1,0 +1,24 @@
+{
+  "benchmark": "RTS-GMLC release 0.2",
+  "hours": 168,
+  "areas": [
+    1,
+    2,
+    3
+  ],
+  "history_start": "2020-01-01",
+  "history_end": "2020-01-07",
+  "target_start": "2020-01-08",
+  "target_end": "2020-01-14",
+  "regional_load_scale": 1.0,
+  "wind_treatment": "official hourly series as time-varying pmax",
+  "wind_units": [
+    "122_WIND_1",
+    "303_WIND_1",
+    "309_WIND_1",
+    "317_WIND_1"
+  ],
+  "conventional_capacity_scaling": 1.0,
+  "network_scaling": 1.0,
+  "co2_scope": "operational_direct"
+}

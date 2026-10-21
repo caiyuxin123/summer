@@ -1,0 +1,19 @@
+{
+  "benchmark": "RTS-GMLC release 0.2",
+  "year": 2020,
+  "month": 2,
+  "hours": 696,
+  "areas": [
+    1,
+    2,
+    3
+  ],
+  "regional_energy_mwh": [
+    767495.7632469999,
+    778776.7432716,
+    1008906.762105
+  ],
+  "history_start": "2020-01-01",
+  "history_end": "2020-01-07",
+  "co2_scope": "operational_direct"
+}

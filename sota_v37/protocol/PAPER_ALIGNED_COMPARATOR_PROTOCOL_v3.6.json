@@ -1,0 +1,122 @@
+{
+  "status": "FROZEN_IMPLEMENTED_AND_LOCKED_BEFORE_FORMAL_TARGET_EVALUATION",
+  "purpose": "Reconcile executable comparators with manuscript Section 3.3 before any paper-level SOTA claim.",
+  "paper_comparators": [
+    {
+      "key": "pi_gnn",
+      "label": "PI-GNN adapted",
+      "source": "Ngo et al., Applied Energy 358 (2024) 122602",
+      "preserved_mechanism": "physics-informed graph message passing with model-based/coarse physical state features"
+    },
+    {
+      "key": "sf_star",
+      "label": "SF* adapted",
+      "source": "De la Varga et al., Electric Power Systems Research 241 (2025) 111268",
+      "preserved_mechanism": "linear state forecasting augmented by features induced by an underdetermined physical estimate"
+    },
+    {
+      "key": "pm_star",
+      "label": "PM* adapted",
+      "source": "De la Varga et al., Electric Power Systems Research 241 (2025) 111268",
+      "preserved_mechanism": "linear prediction of unavailable measurements/pseudo-measurements followed by physical state estimation"
+    },
+    {
+      "key": "pm_dse",
+      "label": "PM-DSE adapted",
+      "source": "de Jongh et al., IEEE Transactions on Smart Grid 16(5) (2025) 3638-3652",
+      "preserved_mechanism": "historical time-series disaggregation to pseudo-measurements followed by physical state estimation"
+    }
+  ],
+  "common_task": {
+    "input": "target monthly coarse statistics + fixed topology/parameters + target-external history only",
+    "output_stage_1": "candidate temporal fine-grained prior/state representation, not monthly y",
+    "output_stage_2": "common projection into the identical monthly-statistics and DC-network feasible set",
+    "postprocessing": "identical nodal CEF -> fixed Area aggregation -> monthly responsibility",
+    "evaluation": [
+      "MAE",
+      "RMSE",
+      "MaxAE",
+      "physical residuals",
+      "runtime"
+    ]
+  },
+  "calibration_policy": {
+    "allowed": "synthetic/history windows outside formal target; hidden-state labels may be generated only inside calibration data",
+    "formal_target_forbidden": [
+      "target-hour nodal load",
+      "target-hour generator output",
+      "target-hour branch flow",
+      "target-hour nodal CEF",
+      "true scale residual",
+      "Reference y during training/tuning/inference"
+    ],
+    "formal_reference_use": "one-time offline evaluation after method and hyperparameter lock"
+  },
+  "shared_candidate_representation": {
+    "dimension": "168 x 48",
+    "components": [
+      "3 Area normalized load trajectories",
+      "45 dispatch-unit normalized generation trajectories"
+    ],
+    "normalization": "Area load / frozen Area base load; dispatch output / unit pmax",
+    "reason": "retain network-location differences needed by state-estimation baselines; category-only representation failed the oracle-state projection self-check",
+    "calendar": "168 weekday-hour representatives expanded to February 2020 by frozen occurrence mapping"
+  },
+  "fairness": {
+    "same_calibration_scenarios": true,
+    "same_train_validation_split": true,
+    "same_formal_target_coarse_information": true,
+    "same_common_physical_projection": true,
+    "same_CEF_and_Area_aggregation": true,
+    "random_methods_report": "10 paired seeds; deterministic linear/disaggregation methods report one deterministic run unless stochastic fitting is introduced",
+    "paired_model_seeds": [
+      20260929,
+      20260930,
+      20260931,
+      20260932,
+      20260933,
+      20260934,
+      20260935,
+      20260936,
+      20260937,
+      20260938
+    ]
+  },
+  "paper_admissibility_gate": [
+    "method identity matches manuscript Section 3.3",
+    "candidate-state rather than direct-y output path is verified",
+    "formal target hidden-state leakage test passes",
+    "common projection and CEF postprocessing are byte-identical across comparators",
+    "hyperparameters are frozen before Reference-only evaluation"
+  ],
+  "protocol_version": "v3.6.2-paper-aligned-state-comparator-pretarget-freeze-no-hidden-mask",
+  "common_projection": {
+    "solver": "sparse linear programming / HiGHS",
+    "representative_hours": 168,
+    "monthly_occurrence_weighting": "February 2020 weekday-hour counts, 4 or 5 occurrences per representative slot",
+    "candidate_objective": "capacity-normalized L1 distance to candidate Area-load and unit-generation profiles",
+    "constraints": [
+      "monthly Area load",
+      "monthly Area x source-category generation",
+      "monthly directed inter-Area exchange",
+      "hourly power balance",
+      "generator capacity",
+      "DC continuous line limits"
+    ],
+    "monthly_numeric_band_mwh": 0.2,
+    "postprocessing": "identical nodal CEF -> fixed Area aggregation"
+  },
+  "selection_policy": {
+    "split": "96/24 deterministic calibration split",
+    "metric": "dimensionless hidden-state profile MAE over all 168x48 channels, including zero-output unit channels",
+    "formal_target_used": false,
+    "formal_reference_used": false,
+    "post_lock_projection_smoke": "calibration validation scenario only; does not alter selected hyperparameters",
+    "hidden_activity_mask": "FORBIDDEN: state_active is a calibration label only and is not supplied to validation prediction, clipping, metric masking, formal training, or formal inference."
+  },
+  "formal_evaluation_rule": {
+    "phase_A": "after pretarget lock verification, attach target_input_only.npz only; train/refit on all 120 calibration samples and freeze all candidate states and projected monthly predictions without loading reference_only.npz",
+    "phase_B": "only after blind predictions are frozen and hashed, attach reference_only.npz once for offline MAE/RMSE/MaxAE evaluation",
+    "no_post_target_tuning": true
+  }
+}

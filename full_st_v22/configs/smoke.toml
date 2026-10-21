@@ -1,0 +1,6 @@
+[project]
+name = "smoke"
+seed = 1
+
+[output]
+dir = "outputs/smoke"

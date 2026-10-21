@@ -1,0 +1,22 @@
+{
+  "status": "V3.7_FORMAL_RESULT_FROZEN_NO_POST_TARGET_TUNING",
+  "files": {
+    "protocol/PAPER_ALIGNED_COMPARATOR_PROTOCOL_v3.6.json": "ab4cc1c44cce008ba708f68b47c98ec22d7117ecabb1c66131a22c6c1d36e39f",
+    "protocol/STATE_MODEL_GRID_v3.6.json": "93565e5337d3ddc718f0e8732511e63dc443199591350e3253e7f7e77ca7d6ab",
+    "artifacts/selection_v36/model_lock_v36.json": "3925a7c45c0604f42ad125cbdb76ec6106d5d3f44aa967800469e3b0e5b335aa",
+    "artifacts/calibration_120_state.npz": "27b55bfbc7c92785025ae77cc897c38a0257708975cdc64b8996f875c42d9e50",
+    "formal_generation/artifacts/calibration_120.npz": "6c2ccfc21aa79d0bcb07ab265a5bc948696e3d24f2f723901cbbf4ab6e619f40",
+    "state_comparators/common_projection.py": "28cbf453bf9a8cb39a8d5914a15f57d81b0a2c4c1b9aad6fcc200c49a168c975",
+    "state_comparators/selection.py": "7202609090831c192f244df5ffae5d17b10f6da4b0742442ec106fa81daf1d97",
+    "state_comparators/linear_models.py": "7179f13afdf8bc52956140d7bfc4fc1397e8b32282e0b5751f5a51edbd7494f4",
+    "state_comparators/pi_gnn.py": "7a7ddd2cb3f961389c7f804beecbeb9f4b01c139aa0011eaf7333f9b825486cd",
+    "state_comparators/state_utils.py": "564e8f5b0c145b506afad2ebcbcb17623e98ed0d913998dca49c25ea764bfc4c",
+    "formal_eval/PHASE_A_BLIND_FREEZE_MANIFEST.json": "531b4c1ed7cf59380602b62448a8ed1b48db221c50616b256c06cdd708530374",
+    "formal_eval/FORMAL_FEB_SOTA_RESULTS_v3.7.json": "0570345e1c98400c7a6405f4dc58ae0341cccd754b30e20c157f1161ccdfdd4f"
+  },
+  "target_sha256": "15b5857aed7e507149e7035381cdc5f44238c2768428fa65411dacbf12891dde",
+  "reference_sha256": "74ace50c9de4fa577f36096e716fb7999f48e4e9b68b78677db762f34bc32cdb",
+  "formal_results_sha256": "0570345e1c98400c7a6405f4dc58ae0341cccd754b30e20c157f1161ccdfdd4f",
+  "phase_a_manifest_sha256": "531b4c1ed7cf59380602b62448a8ed1b48db221c50616b256c06cdd708530374",
+  "rule": "No comparator features, hyperparameters, seeds, candidate states, common projection, or calibration data may be changed in response to February results."
+}

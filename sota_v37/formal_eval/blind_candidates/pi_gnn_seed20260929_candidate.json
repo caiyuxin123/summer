@@ -1,0 +1,24 @@
+{
+  "method": "pi_gnn",
+  "seed": 20260929,
+  "params": {
+    "hidden": 32,
+    "lr": 0.003,
+    "epochs": 120,
+    "weight_decay": 0.0001
+  },
+  "target_sha256": "15b5857aed7e507149e7035381cdc5f44238c2768428fa65411dacbf12891dde",
+  "lock_sha256": "3925a7c45c0604f42ad125cbdb76ec6106d5d3f44aa967800469e3b0e5b335aa",
+  "candidate_sha256": "6c1cc8ef2c06c7f872e62336203876489656f85ec92a6f333f85bba427213199",
+  "candidate_shape": [
+    1,
+    168,
+    48
+  ],
+  "candidate_min": 0.0,
+  "candidate_max": 1.0,
+  "complexity": 7505,
+  "train_s": 12.413385951000237,
+  "predict_s": 0.008276058000319608,
+  "reference_loaded": false
+}

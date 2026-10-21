@@ -1,0 +1,5 @@
+method,MAE,DeltaCorr,SignAcc_pct
+Static-S,32.102,0.730,66.7
+Load-T,30.098,0.760,66.7
+Gen-T,6.300,0.895,100.0
+Full-ST,3.786,0.959,100.0

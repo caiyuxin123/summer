@@ -1,0 +1,16 @@
+{
+  "candidate_index": 1,
+  "params": {
+    "hidden": 16,
+    "lr": 0.003,
+    "epochs": 120,
+    "weight_decay": 0.0001
+  },
+  "metrics": {
+    "MAE": 0.100365539816914,
+    "RMSE": 0.17236975920864828,
+    "MaxAE": 1.0
+  },
+  "complexity": 2225,
+  "runtime_s": 9.808544635772705
+}

@@ -1,0 +1,22 @@
+{
+  "method": "sf_star",
+  "seed": 20260929,
+  "params": {
+    "pca_components": 8,
+    "ridge_alpha": 0.1
+  },
+  "target_sha256": "15b5857aed7e507149e7035381cdc5f44238c2768428fa65411dacbf12891dde",
+  "lock_sha256": "3925a7c45c0604f42ad125cbdb76ec6106d5d3f44aa967800469e3b0e5b335aa",
+  "candidate_sha256": "95868eb38806c33024fba61a118d36dcb3db477383ae8fcdb84b0494fb6dc166",
+  "candidate_shape": [
+    1,
+    168,
+    48
+  ],
+  "candidate_min": 0.0,
+  "candidate_max": 1.0,
+  "complexity": 67904,
+  "train_s": 0.19800641800020458,
+  "predict_s": 0.0009648410000409058,
+  "reference_loaded": false
+}

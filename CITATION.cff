@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the accompanying paper after publication."
+title: "SRE-PCC: Scale-Residual Equivalence-Aware Physics-Consistent Correction"
+type: software
+authors:
+  - family-names: Xiang
+    given-names: Jing
+  - family-names: Zhang
+    given-names: Xiaoman
+  - family-names: Liu
+    given-names: Xuan
+  - family-names: Lu
+    given-names: Yan
+  - family-names: Cai
+    given-names: Yuxin
+version: "v2.2-v3.7"

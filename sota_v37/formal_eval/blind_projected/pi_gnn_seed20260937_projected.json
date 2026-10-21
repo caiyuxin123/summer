@@ -1,0 +1,29 @@
+{
+  "run": "pi_gnn_seed20260937",
+  "target_sha256": "15b5857aed7e507149e7035381cdc5f44238c2768428fa65411dacbf12891dde",
+  "candidate_sha256": "ee988293acf639957962dc4ef826051af2de1fbcef03de3e0fda77fd88738531",
+  "projection_sha256": "28cbf453bf9a8cb39a8d5914a15f57d81b0a2c4c1b9aad6fcc200c49a168c975",
+  "projected_sha256": "1a128cfa366863be4b0ef6027285d72e1b54b1ed5fded8b229a15cbc38f044fd",
+  "fine_month_t_per_mwh": [
+    0.9013486749673588,
+    0.9357012959714862,
+    0.449428624782114
+  ],
+  "direct_month_t_per_mwh": [
+    0.6887569564059391,
+    0.9082957615262051,
+    0.6323059086619474
+  ],
+  "audit": {
+    "objective": 29.02590339117884,
+    "max_load_month_err_mwh": 0.19999999995343387,
+    "max_gen_month_err_mwh": 0.20000000001164153,
+    "max_directed_flow_err_mwh": 0.20000000021536835,
+    "max_line_ratio": 1.0000000000000007,
+    "representative_hours": 168,
+    "expanded_hours": 696,
+    "monthly_band_mwh": 0.2
+  },
+  "project_s": 5.094978359999914,
+  "reference_loaded": false
+}

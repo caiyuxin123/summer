@@ -1,0 +1,13 @@
+name: scale-residual
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy>=1.26
+  - pandas>=2.1
+  - scipy>=1.11
+  - matplotlib>=3.8
+  - pytest>=8.0
+  - pip
+  - pip:
+      - -e .

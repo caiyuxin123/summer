@@ -1,0 +1,29 @@
+{
+  "run": "sf_star_seed20260929",
+  "target_sha256": "15b5857aed7e507149e7035381cdc5f44238c2768428fa65411dacbf12891dde",
+  "candidate_sha256": "95868eb38806c33024fba61a118d36dcb3db477383ae8fcdb84b0494fb6dc166",
+  "projection_sha256": "28cbf453bf9a8cb39a8d5914a15f57d81b0a2c4c1b9aad6fcc200c49a168c975",
+  "projected_sha256": "eeb2c5d15a141a63e3b18d60765111d2d6a2faf6fa5eef117addff2a6c99c81c",
+  "fine_month_t_per_mwh": [
+    0.900995433087117,
+    0.9359831305790487,
+    0.4494791575489455
+  ],
+  "direct_month_t_per_mwh": [
+    0.6888265419153208,
+    0.9082191643345442,
+    0.6323114621390622
+  ],
+  "audit": {
+    "objective": 20.91919265660492,
+    "max_load_month_err_mwh": 0.20000000030267984,
+    "max_gen_month_err_mwh": 0.20000000001164153,
+    "max_directed_flow_err_mwh": 0.20000000030267984,
+    "max_line_ratio": 1.0000000000000009,
+    "representative_hours": 168,
+    "expanded_hours": 696,
+    "monthly_band_mwh": 0.2
+  },
+  "project_s": 5.274182972999824,
+  "reference_loaded": false
+}

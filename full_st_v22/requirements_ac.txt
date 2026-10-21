@@ -1,0 +1,1 @@
+# No optional AC dependency is required in v8; the bundled AC audit uses NumPy/Pandas only.

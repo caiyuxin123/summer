@@ -1,0 +1,2 @@
+case,n_bus,n_branch,n_regions,max_power_balance_mw,total_active_loss_mw,max_identity_closure,max_boundary_loss_decomposition_closure,boundary_exposure_l1,loss_exposure_l1,boundary_share_pct,spatial_residual_mae
+RTS-GMLC-73 AC audit snapshot,73,120,3,1.1368683772161603e-13,134.46072128834635,1.6609646991128102e-10,1.660396264924202e-10,11631.594014558603,416.28202080240374,96.54476839253161,1.7293291243786133
